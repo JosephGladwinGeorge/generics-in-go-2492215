@@ -18,4 +18,5 @@ func main() {
 	fmt.Println(solar3k.Print())
 	fmt.Println(solar2k.Print())
 	fmt.Println(windwest.Print())
+	fmt.Println(business.PrintGeneric(windwest))
 }

@@ -26,4 +26,8 @@ func (w *Wind) Print() string {
 	return fmt.Sprintf("%s - %v\n", kinetecoPrint, *w)
 }
 
+func PrintGeneric[T any] (t T) string{
+	return fmt.Sprintf("%s - %v\n", kinetecoPrint, t)
+}
+
 var kinetecoPrint string = "Kineteco Deal:"
