@@ -30,4 +30,9 @@ func PrintGeneric[T any] (t T) string{
 	return fmt.Sprintf("%s - %v\n", kinetecoPrint, t)
 }
 
+func Printslice[T any](t []T) {
+	for i,j:= range t{
+		fmt.Printf("%d %v",i,PrintGeneric(j))
+	}
+}
 var kinetecoPrint string = "Kineteco Deal:"

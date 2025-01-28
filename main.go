@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 
 	"github.comLinkedInLearning/generics-in-go-2492215/business"
 )
@@ -12,11 +11,8 @@ func main() {
 	// Create three different energy offers of kineteco
 	solar2k := business.Solar{Name: "Solar 2000", Netto: 4.500}
 	solar3k := business.Solar{Name: "Solar 3000", Netto: 4.000}
-	windwest := business.Wind{Name: "Wind West", Netto: 3.950}
 
-	// Print details for each energy offer with kineteco branding
-	fmt.Println(solar3k.Print())
-	fmt.Println(solar2k.Print())
-	fmt.Println(windwest.Print())
-	fmt.Println(business.PrintGeneric(windwest))
+	t:=[]business.Solar{solar2k,solar3k}
+
+	business.Printslice(t)
 }
